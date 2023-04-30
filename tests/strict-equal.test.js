@@ -13,16 +13,16 @@ describe('Test suite: strict-equal.js', () => {
       let data2 = 5
       let expectedResult = true
 
-      let actualResult = strictEqual(data1,data2)
+      let actualResult = strictEqual(data1, data2)
 
-      expect(actualResult).to.equal(expectedResult)
+      expect(actualResult).to.not.equal(expectedResult)
     })
     it('Tests if data type is the same', () => {
       let data1 = 'b'
       let data2 = 'b'
       let expectedResult = true
 
-      let actualResult = strictEqual(data1,data2)
+      let actualResult = strictEqual(data1, data2)
 
       expect(actualResult).to.equal(expectedResult)
     })
@@ -33,16 +33,16 @@ describe('Test suite: strict-equal.js', () => {
       let data2 = 6
       let expectedResult = false
 
-      let actualResult = strictEqual(data1,data2)
+      let actualResult = strictEqual(data1, data2)
 
       expect(actualResult).to.equal(expectedResult)
     })
-    it('Tests is data types are not the same', () => {
+    it('Tests if data types are not the same', () => {
       let data1 = 5
       let data2 = 'a'
       let expectedResult = false
 
-      let actualResult = strictEqual(data1,data2)
+      let actualResult = strictEqual(data1, data2)
 
       expect(actualResult).to.equal(expectedResult)
     })

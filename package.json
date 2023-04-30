@@ -9,7 +9,7 @@
     "lint:fix": "eslint --format stylish --fix ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Kalan Jasny",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.7",
